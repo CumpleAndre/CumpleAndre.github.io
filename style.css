@@ -43,10 +43,92 @@ body{
     justify-content: center;
     align-items: center;
     top: 189.4px;
-    left: 15.3px;
-    width: 325px;
+    width: 100vw;
     height: 105px;
+    z-index: 1;
 }
+
+.Andre{
+    animation: rotate 1.5s;
+}
+
+
+.MartilloLlegando{
+    position: absolute;
+    height: 114px;
+    left: -205px;
+    top: 165px;
+    transform: rotate(814deg);
+    visibility: hidden;
+    animation:   lanzarmartillo 2s;  
+}
+
+.MartilloEstrellado{
+    position: absolute;
+    right: 0px;
+    top: -0px;
+    visibility: inherit;
+    animation:   Estrellar 2s;  
+}
+.EscudoLlegando{
+    position: absolute;
+    transform: rotate(46deg);
+    height: 175px;
+    top: 0px;
+    left: -49px;
+    animation:   lanzarescudo 3.5s;  
+    opacity: 0%;
+}
+
+.EscudoEstrellado{
+    position: absolute;
+    animation:   Estrellar 3.5s; 
+}
+
+.Textcelebracion{
+    font-family: 'Coupe-Bold Regular';
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+.tip1{
+    font-size: 17px;
+    top: 290px;
+    left: 200px ;
+}
+.tip2{
+    font-size: 19px;
+    top: 459px;
+    left: 64px ;
+}
+.ContainerOllo{
+    position: absolute;
+    display: flex;
+    top: 212px;
+    width: 100vw;
+    height: 303px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.ollo{
+    position: absolute;
+    animation:   aparicion 5s;  
+    align-items: center;
+
+}
+
+.mano{
+    position: absolute;
+    animation:   aparicionmano 5s;  
+    z-index: 0;
+    top: 29px;
+    left: 122px;
+}
+
+/* Animaciones */
 @keyframes rotate{ 
     0%{
         height: 1px;
@@ -59,10 +141,6 @@ body{
         transform: rotate(720deg);
         height: 105px;
     }
-}
-
-.Andre{
-    animation: rotate 1.5s;
 }
 
 @keyframes lanzarmartillo{
@@ -85,96 +163,67 @@ body{
         visibility: hidden;
     }
 }
-@keyframes Estrellar{
-    0%{
-        visibility: hidden;
+
+@keyframes lanzarescudo{
+    0%,74%{
+        opacity: 100%;
+        left: 350px;
+        top: 205px;
     }
     75%{
-        visibility: hidden;
+        left: 150px;
+        top: 165px;
+    }
+    99%{
+        opacity: 99%;
+    }
+    100%{
+        height: 175px;
+        top: 0px;
+        opacity: 0%;
+    }
+}
 
+@keyframes Estrellar{
+    0%,75%{
+        visibility: hidden;
     }
     100%{
         visibility: hidden;
     }
-}
-
-.MartilloLlegando{
-    position: absolute;
-    height: 114px;
-    left: -205px;
-    top: 165px;
-    transform: rotate(814deg);
-    visibility: hidden;
-    animation:   lanzarmartillo 2s;  
-}
-
-.MartilloEstrellado{
-    position: absolute;
-    right: 0px;
-    top: -0px;
-    visibility: inherit;
-    animation:   Estrellar 2s;  
-}
-
-.Textcelebracion{
-    font-family: 'Coupe-Bold Regular';
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    z-index: 1;
-
-}
-.tip1{
-    font-size: 17px;
-    top: 290px;
-    left: 200px ;
-}
-.tip2{
-    font-size: 19px;
-    top: 459px;
-    left: 64px ;
-}
-.ContainerOllo{
-    position: absolute;
-    display: flex;
-    top: 212px;
-    width: 335px;
-    height: 303px;
-}
-.ollo{
-    position: absolute;
-    z-index: 0;
-    animation:   aparicion 5s;  
 }
 @keyframes aparicion{
-    0%{
-        opacity: 0;
+    0%,74%
+    {
+        height: 1px;
     }
-    50%{
-        opacity: 0;
+    75%
+    {
+        height: 150px;
     }
-
     100%{
         opacity: 100%;
+        height: 303px;
     }
 }
+
 @keyframes aparicionmano{
-    0%{
-       height: 1px;
-       opacity: 0;
-    }
-    50%{
+    0%,74%
+    {
+        height: 1px;
+        top: 119px;
         opacity: 0;
+    }
+   75%
+    {
+        top: 110px;
+        left: 150px;
+        height: 100px;
+        opacity: 100%;
     }
     100%{
         height: 318px;
+        top: 29px;
+        left: 122px;
     }
-}
-.mano{
-    position: absolute;
-    top: 32px;
-    left: 105px;
-    animation:   aparicionmano 5s;  
-    z-index: 0;
 }
