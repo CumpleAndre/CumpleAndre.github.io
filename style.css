@@ -73,11 +73,12 @@ body{
 .EscudoLlegando{
     position: absolute;
     transform: rotate(46deg);
-    height: 175px;
-    top: 0px;
-    left: -70px;
+    height: 146px;
+    top: 15px;
+    left: -52px;
     animation:   lanzarescudo 3.5s;  
     opacity: 0%;
+    z-index: 2;
 }
 
 .EscudoEstrellado{
@@ -169,18 +170,18 @@ body{
         opacity: 100%;
         left: 370px;
         top: 265px;
-    }
-    75%{
-        left: 150px;
-        top: 165px;
+        transform: rotate(0deg);
     }
     99%{
         opacity: 99%;
     }
     100%{
-        height: 175px;
-        top: 0px;
+        height: 146px;
+        top: 15px;
+        left: -52px;
         opacity: 0%;
+        transform: rotate(760deg);
+
     }
 }
 
