@@ -2,20 +2,10 @@
     font-family: Coupe-Bold Regular;
     src: url('./fonts/Coupe-Bold\ Regular.otf') format('truetype');
 }
-html{
-    overflow-x:scroll;
-    overflow-y:hidden;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    background-color: rgb(20 17 90 / 83%);
+*{
     margin: 0;
     padding: 0;
-    overflow-x:scroll;
+    overflow-x:hidden;
     overflow-y:hidden;
     box-sizing: border-box;
 }
