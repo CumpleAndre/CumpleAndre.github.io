@@ -167,8 +167,8 @@ body{
 @keyframes lanzarescudo{
     0%,74%{
         opacity: 100%;
-        left: -70px;
-        top: 205px;
+        left: 370px;
+        top: 265px;
     }
     75%{
         left: 150px;
