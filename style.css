@@ -2,16 +2,17 @@
     font-family: Coupe-Bold Regular;
     src: url('./fonts/Coupe-Bold\ Regular.otf') format('truetype');
 }
+html{
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     position: relative;
-    background-image: url(./Img/Rectángulo\ 1.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-color: rgb(20 17 90 / 83%);
     margin: 0;
     padding: 0;
     overflow-x:scroll;
@@ -21,9 +22,11 @@ body{
 
 .ContainerInvitacion{
     position: relative;
-    position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
+    background-image: url(./Img/Rectángulo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .Telaraña{
     position: absolute;
