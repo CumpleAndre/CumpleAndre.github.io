@@ -75,7 +75,7 @@ body{
     transform: rotate(46deg);
     height: 175px;
     top: 0px;
-    left: -49px;
+    left: -70px;
     animation:   lanzarescudo 3.5s;  
     opacity: 0%;
 }
