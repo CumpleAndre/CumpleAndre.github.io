@@ -5,13 +5,12 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
-    overflow-y:hidden;
     box-sizing: border-box;
 }
-
+body{
+    height: 100%;
+}
 .ContainerInvitacion{
-    position: relative;
     height: 100vh;
     width: 100vw;
     background-image: url(./Img/Rectángulo\ 1.png);
