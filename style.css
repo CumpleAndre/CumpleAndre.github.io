@@ -87,7 +87,7 @@ body{
 
 .Textcelebracion{
     font-family: 'Coupe-Bold Regular';
-    color: #red;
+    color: #fff;
     text-align: center;
     margin: 0;
     position: absolute;
@@ -167,7 +167,7 @@ body{
 @keyframes lanzarescudo{
     0%,74%{
         opacity: 100%;
-        left: 350px;
+        left: -70px;
         top: 205px;
     }
     75%{
