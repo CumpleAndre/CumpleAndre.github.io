@@ -13,6 +13,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.Fondo{
+
+}
 .ContainerInvitacion{
     position: relative;
     position: relative;
@@ -76,14 +79,23 @@ body{
     height: 146px;
     top: 15px;
     left: -52px;
-    animation:   lanzarescudo 3.5s;  
+    animation:   lanzarescudo 2s;  
+    transform: skew(323deg,29deg);
     opacity: 0%;
     z-index: 2;
+}
+.Fondo{
+    position: absolute;
+    background-image: url(./Img/Grupo\ 50.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    animation:   Estrellar2 2s;  
 }
 
 .EscudoEstrellado{
     position: absolute;
-    animation:   Estrellar 3.5s; 
+    animation:   Estrellar 2s; 
 }
 
 .Textcelebracion{
@@ -191,6 +203,16 @@ body{
     }
     100%{
         visibility: hidden;
+    }
+}
+
+@keyframes Estrellar2{
+    0%,99%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+
     }
 }
 @keyframes aparicion{
