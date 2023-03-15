@@ -14,7 +14,7 @@
         <h2 class="Textllamado">
             Este es un llamado <br>
             especial para:<br>
-            Todos los supers
+            <span id="invitado"></span>
         </h2>
 
         <img class="MartilloEstrellado" src="./Img/Rectángulo 118.png" alt="martillo">
@@ -75,4 +75,8 @@
 
     </div>
 </body>
+<script>
+    let name = prompt('¿Cuál es tu nombre de super heroe?');
+    document.getElementById("invitado").innerHTML =  name;
+</script>
 </html>
