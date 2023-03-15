@@ -33,6 +33,7 @@ body{
     top: 7%;
     left: calc(50% - 93.5px);
     z-index: 2;
+    line-height: 30px;
 }
 .ContainerAndre{
     position: absolute;
@@ -108,7 +109,8 @@ body{
 .tip3{
     font-size: 20px;
     top: 74%;
-    left: calc(50% - 91px);
+    left: calc(50% - 91px);59
+    
 }
 .Containerhoyo{
     position: absolute;
