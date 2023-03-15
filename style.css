@@ -241,12 +241,12 @@ body{
 .ubicacion{
     position: absolute;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Coupe-Bold Regular';
     background: #fff;
     color: #0000009e;
-    left: 25px;
-    top: 39px;
+    left: 27px;
+    top: 40px;
 }
 /* #Cerrar:hover:after{
     content: "";
