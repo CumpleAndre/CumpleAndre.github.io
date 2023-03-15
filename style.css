@@ -29,8 +29,8 @@ body{
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 91.5px;
-    left: 88.3px;
+    top: 5%;
+    left: calc(50% - 93.5px);
     z-index: 2;
 }
 .ContainerAndre{
@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 189.4px;
+    top: 12%;
     width: 100vw;
     height: 105px;
     z-index: 2;
@@ -96,7 +96,7 @@ body{
 }
 .tip1{
     font-size: 17px;
-    top: 290px;
+    top: 24%;
     left: 200px ;
 }
 .tip2{
@@ -112,7 +112,7 @@ body{
 .Containerhoyo{
     position: absolute;
     display: flex;
-    top: 212px;
+    top: 14%;
     width: 100vw;
     height: 303px;
     justify-content: flex-start;
