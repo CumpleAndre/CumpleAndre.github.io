@@ -238,6 +238,16 @@ body{
 #Cerrar:hover{
     background-image: url(https://www.shutterstock.com/image-vector/delete-sign-red-circle-x-260nw-769640656.jpg);
 }
+.ubicacion{
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Coupe-Bold Regular';
+    background: #fff;
+    color: #0000009e;
+    left: 25px;
+    top: 39px;
+}
 /* #Cerrar:hover:after{
     content: "";
     position: absolute;
