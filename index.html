@@ -58,11 +58,11 @@
         
         <div class="ContainerLugar">
             <img src="./Img/Grupo 35.png" alt="">
-            <a class="TextLugar" href="https://www.google.com/search?rlz=1C1ONGR_enMX1047MX1047&sxsrf=AJOqlzUayxB9Ig73W2jnzl64pZ2yq5EzZQ:1678835587257&q=hacienda+raal&npsic=0&rflfq=1&rldoc=1&rllag=20622471,-103262671,4805&tbm=lcl&sa=X&ved=2ahUKEwjg9MH2xdz9AhU0NEQIHYrLC7YQtgN6BAgQEAE&biw=1360&bih=657&dpr=1#rlfi=hd:;si:;mv:[[20.7346698,-103.2158688],[20.525264,-103.5387305]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1">
-                <span>Te esperamos en:</span><br>
+            <button id="Ubicacion" class="TextLugar Button"> 
+            <span>Te esperamos en:</span><br>
                 HACIENDA REAL,<br>
                 Tonalá, Jalisco. 
-            </a>
+            </button>
             <p class="TextLugar tipo2">
                 <span>A partir de las</span><br>
                 4:00 PM 
@@ -72,11 +72,41 @@
         <img class="Iron" src="./Img/Rectángulo 122.png" alt="Iron">
         
 
+        <div id="miVentana" class="Mapa">
+            <iframe 
+            width="300" 
+            height="200" 
+            frameborder="0"
+             scrolling="no" 
+             marginheight="0" 
+             marginwidth="0" 
+             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=cervececeria%20chapultepec%20tlaquepaque+(Cumple%20Andre)&amp;t=k&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+            <button id="Cerrar">
+                
+            </button>
+            
+        </div>
+
 
     </div>
 </body>
 <script>
-    let name = prompt('¿Cuál es tu nombre de super heroe?');
+    let name = prompt('¿Cuál es tu nombre de Superhéroe?');
     document.getElementById("invitado").innerHTML =  name;
+    
+    let botton = document.getElementById("Ubicacion");
+    let miVentana = document.getElementById("miVentana");
+
+    botton.onclick = function() {
+        miVentana.style.display = "flex";
+    }      
+    let cerrarVentana = document.getElementById("Cerrar");
+
+    cerrarVentana.onclick = function() {
+        miVentana.style.display = "none";
+    } 
+
+
 </script>
 </html>
