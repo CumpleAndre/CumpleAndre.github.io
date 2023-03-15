@@ -30,7 +30,7 @@ body{
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 5%;
+    top: 7%;
     left: calc(50% - 93.5px);
     z-index: 2;
 }
@@ -39,7 +39,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 12%;
+    top: 16%;
     width: 100vw;
     height: 105px;
     z-index: 2;
@@ -97,23 +97,23 @@ body{
 }
 .tip1{
     font-size: 17px;
-    top: 24%;
+    top: 30%;
     left: 200px ;
 }
 .tip2{
     font-size: 19px;
-    bottom: 33%;
+    top: 59%;
     left: calc(50% - 143.5px) ;
 }
 .tip3{
     font-size: 20px;
-    bottom: 17%;
+    top: 74%;
     left: calc(50% - 91px);
 }
 .Containerhoyo{
     position: absolute;
     display: flex;
-    top: 14%;
+    top: 18%;
     width: 100vw;
     height: 303px;
     justify-content: flex-start;
@@ -135,7 +135,7 @@ body{
 }
 .ContainerDia{
     position: absolute;
-    bottom: 25%;
+    top: 64%;
     z-index: 0;
     left: calc(50% - 157.5px);
 }
